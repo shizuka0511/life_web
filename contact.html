@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFE</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- nav section -->
+   <nav class="navbar">
+       <a href="/" class="nav_logo">LIFE</a>
+       <div class="navbar_toggle" id="mobile-menu">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+    </div>
+    <div class="navbar_menu">
+        <a href="/index.html" class="navr_link">home</a> 
+        <a href="/service.html" class="navr_link">service</a>  
+        <a href="/contact.html" class="navr_link">contact</a>  
+        <a href="/signup.html" class="navr_link">Sign up</a>  
+    </div>
+   </nav>
+  <!--contact us foam -->
+    <h1 class="c_heading">Contat Us</h1>
+    <p class="c_para">thank you for reaching out us!</p>
+
+  <form class="c_form" action="mailto:LIFE@localcouncil.com" method="post" enctype="text/plain">
+     
+     <!--first name-->
+     <div class="c_container">
+         <label for="first_name" class="f_name">*first Name</label>
+         <input class="text" type="text" id="first-name" name="first-name" 
+         placeholder="Enter first name" value="" pattern="[A-Za-z0-9 ]+" required>
+     </div>
+
+     <p class="alert" id="f-n-alert">Please enter your valid first name</p>
+     <p class="alert" id="f-f-n-required">Your first name is required</p>
+
+    <!--last name-->
+     <div class="c_container">
+        <label for="Last_name" class="l_name">*Last Name</label>
+        <input class="text" type="text" id="last-name" name="last-name" 
+        placeholder="Enter last name" value="" pattern="[A-Za-z0-9 ]+" required>
+    </div>
+
+    <p class="alert" id="l-n-alert">Please enter your valid last name</p>
+    <p class="alert" id="l-n-required">Your last name is required</p>
+
+    <!--address-->
+    <div class="c_container">
+         <label for="contact_address" class="c_address">Address</label>
+         <input class="text" type="text" id="address" name="address" 
+         placeholder="Enter your address (optional)" value="" >
+     </div>
+    <!--email-->
+    <div class="c_container">
+        <label for="contact_email" class="c_mail">*Email</label>
+        <input class="text" type="email" id="email" name="email" 
+        placeholder="Enter your email" value="" required>
+    </div>
+
+    <p class="alert" id="email-alert">Your eamil is invalid</p>
+    <p class="alert" id="email-required">Your eamil is requried </p>
+
+<!--equiry-->
+<div class="c_container">
+        <label for="enquiry" class="c_enuiry">Equiry</label>
+        <textarea id="enquiry" name="enquiry" placeholder="what do you want to say to us?" 
+        value="" required></textarea>     
+    </div>
+<!-- subbmit btn-->
+<input class="btn_submit" type="submit" value="submit">
+</form>
+<!--pop up -->
+<div id="blocker"></div>
+<div class="form-complete-popup">
+    <h2 class="header">Thank you for reaching out to us!</h2>
+    <h2 class="header">We will get back to you soon!</h2>
+</div>
+
+   <!--footer-->
+
+   <div class="footer">
+       <div class="f_wrapper">
+           <div class="f_desc">
+               <h1>LIFE</h1>
+           </div>
+           <div class="f_links">
+               <h2 class="f_title">Contact us</h2>
+                   <a href="/contact.html" class="f_link">Contact</a>
+                  
+           </div>
+       </div>
+
+       <div class="f_wrapper">
+        <div class="f_links">
+            <h2 class="f_title">Site map</h2>
+                <a href="sitemap.html" class="f_link">Site map</a>
+        </div>
+
+        <div class="f_links">
+            <h2 class="f_title">COVID-19 Resources</h2>
+            <a href="https://www.who.int/indonesia/news/novel-coronavirus" class="f_link" target="_blank">COVID-19 Resources</a>
+        </div>
+
+       </div>
+   </div>
+   <script src="/Js/contact.js">
+       
+   </script>
+</body>
+</html>

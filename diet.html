@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFE</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- nav section -->
+   <nav class="navbar">
+       <a href="/" class="nav_logo">LIFE</a>
+       <div class="navbar_toggle" id="mobile-menu">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+    </div>
+    <div class="navbar_menu">
+        <a href="/index.html" class="navr_link">home</a> 
+        <a href="/service.html" class="navr_link">service</a>  
+        <a href="/contact.html" class="navr_link">contact</a>  
+        <a href="/signup.html" class="navr_link">Sign up</a>  
+    </div>
+   </nav>
+<!-- diet -->
+<h1 class="d_header">Meal Planner</h1>
+<p>This is one of our last services that can help you plan your meal!</p>
+<p>To start with you need to select all food icon to begin the services!</p>
+<p> Enter your desired colories for today's meal and press start. We will automaticaly make the plans for you from break fast to dinner!</p>
+<p> The type of food will coming in soon !</p>
+
+<!-- diet container -->
+<div class="d-container">
+
+    <figure class="diet" id="anything" in="anythingList">
+        <img src="/Img/meat.jpg" alt="an icon of meat" class="diet-icon">
+        <figcaption>all food</figcaption>
+    </figure>
+   
+</div>
+
+
+
+<!-- input cal -->
+<div class="input">
+<label for="">Input your calories you want:</label>
+<input id="calories" type="text" class="calories" placeholder="enter your calories" value="">
+<br>
+<!-- mean btn -->
+    <button id="m_button" class="start">Start</button>
+    <button id="m_button" class="reset">Reset</button>
+</div>
+
+<!--result meal -->
+<div class="m_result">
+
+    <h1 class="r_header">Today's meal</h1>
+    <p class="t_header">Total calories: <span class="total-calories">#</span>cal</p>
+
+ <hr>
+    
+    <h2 class="meal">Breakfast:</h2> 
+    <p class="header">calories: <span class="breakfast-calories">#</span>cal</p>
+    <div class="result-list-container-breakfast"></div>
+
+<hr>
+    <h2 class="meal">Lunch:</h2>
+    <p class="header">calories: <span class="lunch-calories">#</span>cal</p>
+    <div class="result-list-container-lunch">
+    </div>
+<hr>
+
+    <h2 class="meal">Dinner:</h2>
+    <p class="header">calories: <span class="dinner-calories">#</span>cal</p>
+    <div class="result-list-container-dinner"></div>
+<hr>
+<button class="bottom">
+    <a class ="goback" href="/service.html">GO BACK</a>
+</button>
+</div>
+
+ 
+   <!--footer-->
+
+   <div class="footer">
+       <div class="f_wrapper">
+           <div class="f_desc">
+               <h1>LIFE</h1>
+           </div>
+           <div class="f_links">
+               <h2 class="f_title">Contact us</h2>
+                   <a href="/contact.html" class="f_link">Contact</a>
+                  
+           </div>
+       </div>
+
+       <div class="f_wrapper">
+        <div class="f_links">
+            <h2 class="f_title">Site map</h2>
+                <a href="#" class="f_link">Site map</a>
+        </div>
+
+        <div class="f_links">
+            <h2 class="f_title">COVID-19 Resources</h2>
+            <a href="#" class="f_link">COVID-19 Resources</a>
+        </div>
+
+       </div>
+   </div>
+   <script type="module" src="/Js/diet.js">
+       
+   </script>
+</body>
+</html>

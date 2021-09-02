@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIFE</title>
+    <link rel="stylesheet" href="Style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- nav section -->
+   <nav class="navbar">
+       <a href="/" class="nav_logo">LIFE</a>
+       <div class="navbar_toggle" id="mobile-menu">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+    </div>
+    <div class="navbar_menu">
+        <a href="/index.html" class="navr_link">home</a> 
+        <a href="/service.html" class="navr_link">service</a>  
+        <a href="/contact.html" class="navr_link">contact</a>  
+        <a href="/signup.html" class="navr_link">Sign up</a>  
+    </div>
+   </nav>
+<!-- sign up form-->
+
+<!-- header sign up-->
+<h1 class="s_header">Sign up</h1>
+<p class="s_para">Sign up for better health and start living your day fully </p>
+
+<!-- first name form-->
+
+<form id="r-form" action="mailto:LIFE@localcouncil.com" method="post" enctype="text/plain">
+    <div class="r-container">
+        <label for="register_first_name">*First Name:</label>
+        <input class="textbox" type="text" id="r-first-name" name="fistName" placeholder="enter first name" value="">
+    </div>
+    <p class="alert" id="f-name-alert">Please enter a valid first name.</p>
+    <p class="alert" id="f-name-required">Your first name is required.</p>
+
+<!-- last name form-->
+    <div class="r-container">
+
+        <label for="register_last_name">*Last Name:</label>
+        <input class="textbox" type="text" id="r-last-name" name="lasName" placeholder="enter last name" value="">
+    </div>
+    <p class="alert" id="l-name-alert">Please enter a valid last name.</p>
+    <p class="alert" id="l-name-required">Your last name is required.</p>
+
+<!-- email form-->
+
+    <div class="r-container">
+        <label for="register_email">*Email:</label>
+        <input class="textbox" type="text" id="r-email" name="email" placeholder="enter email" value="">
+    </div>
+    <p class="alert" id="e-alert">Please enter a valid email.</p>
+    <p class="alert" id="e-required">Your email is required.</p>
+
+<!--email confrim -->
+
+    <div class="r-container">
+        <label for="register_email_confirm">*Confirm-Email</label>
+        <input class="textbox" type="text" id="r-email-confirm" name="emailConfirm" placeholder="enter email again" value="">
+    </div>
+    
+    <p class="alert" id="e-confirm-alert">Your emails don't match.</p>
+    <p class="alert" id="e-confirm-required">Your email confirm is required.</p>
+
+   <!-- phone number form--> 
+    <div class="r-container">
+        <label for="register_phone">*Phone Number:</label>
+        <p>+61</p>
+        <input class="textbox" type="text" id="r-phone" name="phone" placeholder="enter phone number" value="">
+    </div>
+    <p class="alert" id="p-alert">Please enter a valid phone.</p>
+    <p class="alert" id="p-required">Your phone is required.</p>
+   
+    <!-- age form-->
+    <div class="r-container">
+        <label for="register_age">*Age:</label>
+        <input class="range" type="range" id="r-age" name="age" min="16" max="120" step="1" value="120">
+        <span><p id="dis-age">120</p></span>
+    </div>
+    <p class="alert" id="a-required">Your age is required.</p>
+    
+
+    <!-- student form-->
+    <div class="r-container">
+        <p>*Are you a student?</p>
+        <label for="register_student_yes">Yes</label>
+        <input class="radio" type="radio" id="r-student-yes" name="student" value="yes">
+        <label for="register_student_no">No</label>
+        <input class="radio" type="radio" id="r-student-no" name="student" value="no">
+    </div>
+    <p class="alert" id="s-status-required">Please pick one.</p>
+
+    <!-- employed form-->
+    <div class="r-container">
+        <label for="register_employed">Employed</label>
+        <input class="radio" type="radio" id="r-employed" name="employment" value="employed">
+
+     <!-- uemployed form-->   
+
+        <label for="register_unemployed">Unemployed</label>
+        <input class="radio" type="radio" id="r-unemployed" name="employment" value="unemployed">
+    </div>
+    <p class="alert" id="emp-required">Please pick one.</p>
+
+    <p > 
+        <hr >
+    </p>
+
+    <!-- price form-->
+    <div class="r-container">
+        <p>Total Annual membership fee:</p>
+        <span><p id="a-fee">$120.00</p></span>
+    </div>
+
+    <!-- submit btn -->
+
+    <div class="r-container">
+        <input class="submit" type="submit" id="s-btn" value="Sign uemployed">
+    </div>
+</form>
+
+
+   <!--footer-->
+
+   <div class="footer">
+       <div class="f_wrapper">
+           <div class="f_desc">
+               <h1>LIFE</h1>
+           </div>
+           <div class="f_links">
+               <h2 class="f_title">Contact us</h2>
+                   <a href="/contact.html" class="f_link">Contact</a>
+                  
+           </div>
+       </div>
+
+       <div class="f_wrapper">
+        <div class="f_links">
+            <h2 class="f_title">Site map</h2>
+                <a href="sitemap.html" class="f_link">Site map</a>
+        </div>
+
+        <div class="f_links">
+            <h2 class="f_title">COVID-19 Resources</h2>
+            <a href="https://www.who.int/indonesia/news/novel-coronavirus" class="f_link" target="_blank">COVID-19 Resources</a>
+        </div>
+
+       </div>
+   </div>
+   <script src="/Js/signup.js">
+       
+   </script>
+</body>
+</html>
